@@ -1,0 +1,14 @@
+<div>
+    <table>
+        <tr *ngFor="let b of Bgg.games">
+            <td>{{ b.game_id }}</td>
+            <td>{{ b.name }}</td>
+            <input type="button" (click)="getGamesbyId(b.game_id)" value="GameId {{ b.game_id }}">
+        </tr>
+        <tr>
+            <td>{{ Bgg.limit }}</td>
+            <td>{{ Bgg.offset }}</td>
+            <td>{{ Bgg.total }}</td>
+        </tr>  
+    </table>
+</div>
